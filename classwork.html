@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            width: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+        .chasi {
+            width: 40vw;
+            height: 40vw;
+            background-color: red;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+            border-radius: 50%;
+            
+            position: relative;
+        }
+        .center {
+            width: 8%;
+            height:8%;
+            background-color: red;
+            border: 2px solid white;
+            border-radius: 50%;
+            position: absolute;
+            top: 46%;
+            left: 46%;
+            z-index: 5;
+        }
+        .sec {
+            width: 40%;
+            height: 2px;
+            background-color: white;
+           
+            transform: rotate(90deg);
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            
+
+            animation: 60s linear infinite forwards seconds;
+        }
+        .min {
+            width: 38%;
+            height: 3px;
+            background-color: white;
+           
+            transform: rotate(90deg);
+            position: absolute;
+            top: 50%;
+            right: 50%;
+           
+
+            animation: 3600s linear infinite forwards min;
+        }
+        .chas {
+            width: 35%;
+            height: 4px;
+            background-color: white;
+           
+            transform: rotate(90deg);
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            
+
+            animation: 86400s linear infinite forwards chas;
+        }
+        @keyframes seconds {
+            0% {
+                transform:rotate(90deg);
+                transform-origin: center right 0;
+                
+            }
+            40% {
+                transform-origin: center right 0;
+                transform:rotate(144deg);
+                
+            }
+            60% {
+                transform:rotate(216deg);
+                transform-origin: center right 0;
+            }
+            100% {
+                transform:rotate(450deg);
+                transform-origin: center right 0;
+                
+            }
+        }
+        @keyframes min {
+            0% {
+                transform:rotate(90deg);
+                transform-origin: center right 0;
+                
+            }
+            40% {
+                transform-origin: center right 0;
+                transform:rotate(144deg);
+                
+            }
+            60% {
+                transform:rotate(216deg);
+                transform-origin: center right 0;
+            }
+            100% {
+                transform:rotate(450deg);
+                transform-origin: center right 0;
+                
+            }
+        }
+        @keyframes chas {
+            0% {
+                transform:rotate(90deg);
+                transform-origin: center right 0;
+                
+            }
+            40% {
+                transform-origin: center right 0;
+                transform:rotate(144deg);
+                
+            }
+            60% {
+                transform:rotate(216deg);
+                transform-origin: center right 0;
+            }
+            100% {
+                transform:rotate(450deg);
+                transform-origin: center right 0;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="chasi">
+        <div class="center"></div>
+        <div class="sec"></div>
+        <div class="min"></div>
+        <div class="chas"></div>
+        
+    </div>
+</body>
+</html>
